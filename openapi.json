@@ -10,7 +10,7 @@
   },
   "servers": [
     {
-      "url": "https://api.myalice.ai"
+      "url": "https://api.iomnihub.ai"
     }
   ],
   "security": [
@@ -672,8 +672,8 @@
     "securitySchemes": {
       "ApiKeyAuth": {
         "type": "apiKey",
-        "in": "header",
-        "name": "X-Myalice-Api-Key"
+        "in": "query",
+        "name": "api_key"
       }
     }
   }

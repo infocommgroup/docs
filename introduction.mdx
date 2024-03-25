@@ -1,6 +1,6 @@
 ---
 title: 'Get Started'
-description: 'MyAlice provides REST APIs and Webhooks for you to build on top of MyAlice and connect your internal systems with MyAlice as well.'
+description: 'iOmniHub provides REST APIs and Webhooks for you to build on top of iOmniHub and connect your internal systems with iOmniHub as well.'
 ---
 
 <Note>
@@ -9,33 +9,33 @@ description: 'MyAlice provides REST APIs and Webhooks for you to build on top of
 
 ## Authentication
 
-Any API request needs to have `X-Myalice-Api-Key` in the header.
+Any API request needs to have `api_key` in the params.
 
 ## Obtaining the Key
-To obtain your authentication key, navigate to your [Team Settings](https://app.myalice.ai/settings/team-info) in the dashboard. Locate the **API Key** and store it.
+To obtain your authentication key, navigate to your [Team Settings](https://app.iomnihub.ai/settings/team-info) in the dashboard. Locate the **API Key** and store it.
 
 ## Using the Key
-Add `X-Myalice-Api-Key` in the header of your API call. All API requests must be made over HTTPS.
+Add `api_key` in the params of your API call. All API requests must be made over HTTPS.
 - Calls made over plain HTTP will fail.
-- Any request without `X-Myalice-Api-Key` in the header will also fail.
+- Any request without `api_key` in the params will also fail.
 
 ## Key Security
 <Warning>Treat your API key like a password. Keep it confidential and never expose it in public repositories, client-side code, or any other public channels.</Warning>
 
-**Key Regeneration:** In the event of a security breach or if you suspect your key has been compromised, regenerate a new key immediately. Contact [Support](mailto:support@myalice.ai) for this.
+**Key Regeneration:** In the event of a security breach or if you suspect your key has been compromised, regenerate a new key immediately. Contact [Support](mailto:support@iomnihub.ai) for this.
 
 ## Authentication Process
-Once you have your API key, include it in the HTTP header of your requests under `X-Myalice-Api-Key` as specified in the API documentation. The header should look like this:
+Once you have your API key, include it in the HTTP params of your requests under `api_key` as specified in the API documentation. The header should look like this:
 
 ```
 GET /api/endpoint
-Host: api.myalice.ai
-X-Myalice-Api-Key: YOUR_API_KEY
+Host: api.iomnihub.ai
+api_key: YOUR_API_KEY
 ```
 
 ### Example using cURL
 
 ```
-curl -X GET "https://api.myalice.ai/api/endpoint" \
+curl -X GET "https://api.iomnihub.ai/api/endpoint" \
      -H "X-Myalice-Api-Key: YOUR_API_KEY"
 ```
