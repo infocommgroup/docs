@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "MyAlice",
-    "description": "MyAlice API to communicate with MyAlice dashboard and your internal system",
+    "title": "iOmniHub",
+    "description": "Seamless Connections, Endless Possibilities",
     "license": {
       "name": "MIT"
     },

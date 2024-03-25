@@ -7,42 +7,26 @@
   },
   "favicon": "/logo/favicon.svg",
   "colors": {
-    "primary": "#00BD56",
-    "light": "#FFDA54",
-    "dark": "#00916E",
+    "primary": "#ed2f34",
+    "light": "#ec2e33",
+    "dark": "#ee3137",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#fe4c51",
+      "to": "#ee3137"
     }
   },
   "topbarLinks": [
     {
       "name": "Sign In",
-      "url": "https://app.myalice.ai/"
+      "url": "https://app.iomnihub.ai/"
     }
   ],
   "topbarCtaButton": {
     "name": "Sign Up",
-    "url": "https://app.myalice.ai/register"
+    "url": "https://app.iomnihub.ai/register"
   },
   "tabs": [],
-  "anchors": [
-    {
-      "name": "Product Documentation",
-      "icon": "book-open-cover",
-      "url": "https://docs.myalice.ai/"
-    },
-    {
-      "name": "Roadmap",
-      "icon": "code",
-      "url": "https://roadmap.myalice.ai/"
-    },
-    {
-      "name": "Support",
-      "icon": "phone",
-      "url": "mailto:support@myalice.ai"
-    }
-  ],
+  "anchors": [],
   "navigation": [
     {
       "group": "Introduction",
@@ -84,9 +68,5 @@
       ]
     }
   ],
-  "footerSocials": {
-    "twitter": "https://twitter.com/myaliceai",
-    "facebook": "https://www.facebook.com/myaliceai",
-    "linkedin": "https://www.linkedin.com/company/myaliceai"
-  }
+  "footerSocials": {}
 }
