@@ -69,7 +69,7 @@
     },
     "/stable/open/customers/send-text-message": {
       "post": {
-        "description": "Sends a text message to a MyAlice customer in any platform",
+        "description": "Sends a text message to a iOmniHub customer in any platform",
         "requestBody": {
           "description": "Text to send",
           "content": {
@@ -117,7 +117,7 @@
     },
     "/stable/open/customers/send-attachment-message": {
       "post": {
-        "description": "Sends an attachment to a MyAlice customer in any platform",
+        "description": "Sends an attachment to a iOmniHub customer in any platform",
         "requestBody": {
           "description": "Attachment to send",
           "content": {
@@ -165,7 +165,7 @@
     },
     "/stable/open/whatsapp/get-platform-list": {
       "get": {
-        "description": "Get the list of whatsapp platform associated with a MyAlice team",
+        "description": "Get the list of whatsapp platform associated with a iOmniHub team",
         "responses": {
           "200": {
             "description": "Successful operation",
@@ -210,7 +210,7 @@
           {
             "name": "platform_id",
             "in": "query",
-            "description": "The Id of the WhatsApp Platform, can be found in MyAlice Dashboard or with API",
+            "description": "The Id of the WhatsApp Platform, can be found in iOmniHub Dashboard or with API",
             "required": true,
             "schema": {
               "type": "integer"
@@ -261,7 +261,7 @@
           {
             "name": "platform_id",
             "in": "query",
-            "description": "The Id of the WhatsApp Platform, can be found in MyAlice Dashboard or with API",
+            "description": "The Id of the WhatsApp Platform, can be found in iOmniHub Dashboard or with API",
             "required": true,
             "schema": {
               "type": "integer"
@@ -270,7 +270,7 @@
           {
             "name": "template_id",
             "in": "query",
-            "description": "The Template Id of the Template, can be found in MyAlice Dashboard or with API",
+            "description": "The Template Id of the Template, can be found in iOmniHub Dashboard or with API",
             "required": true,
             "schema": {
               "type": "integer"
@@ -323,12 +323,12 @@
         "type": "object",
         "properties": {
           "template_id": {
-            "description": "The Id of the Template, can be found in MyAlice Dashboard",
+            "description": "The Id of the Template, can be found in iOmniHub Dashboard",
             "type": "string",
             "example": "102323213"
           },
           "channel_id": {
-            "description": "The Id of the WhatsApp Channel, can be found in MyAlice Dashboard",
+            "description": "The Id of the WhatsApp Channel, can be found in iOmniHub Dashboard",
             "type": "string",
             "example": "1022"
           },
@@ -356,25 +356,25 @@
                 "description": "URL of the attachment, must be publicly accessible. Only use if the header is of type image",
                 "type": "string",
                 "format": "uri",
-                "example": "https://myalice.ai/attachment.jpg"
+                "example": "https://iomnihub.ai/attachment.jpg"
               },
               "audio": {
                 "description": "URL of the attachment, must be publicly accessible. Only use if the header is of type audio",
                 "type": "string",
                 "format": "uri",
-                "example": "https://myalice.ai/attachment.mp3"
+                "example": "https://iomnihub.ai/attachment.mp3"
               },
               "video": {
                 "description": "URL of the attachment, must be publicly accessible. Only use if the header is of type video",
                 "type": "string",
                 "format": "uri",
-                "example": "https://myalice.ai/attachment.mp4"
+                "example": "https://iomnihub.ai/attachment.mp4"
               },
               "document": {
                 "description": "URL of the attachment, must be publicly accessible. Only use if the header is of type document",
                 "type": "string",
                 "format": "uri",
-                "example": "https://myalice.ai/attachment.pdf"
+                "example": "https://iomnihub.ai/attachment.pdf"
               }
             }
           }
@@ -388,7 +388,7 @@
         "type": "object",
         "properties": {
           "customer_id": {
-            "description": "The Id of the customer in MyAlice, can be found in MyAlice Dashboard or API/Webhook call",
+            "description": "The Id of the customer in iOmniHub, can be found in iOmniHub Dashboard or API/Webhook call",
             "type": "string",
             "example": "1022"
           },
@@ -408,7 +408,7 @@
         "type": "object",
         "properties": {
           "customer_id": {
-            "description": "The Id of the customer in MyAlice, can be found in MyAlice Dashboard or API/Webhook call",
+            "description": "The Id of the customer in iOmniHub, can be found in iOmniHub Dashboard or API/Webhook call",
             "type": "string",
             "example": "1022"
           },
@@ -425,7 +425,7 @@
           "attachment_url": {
             "description": "Publicly accessible URL of the attachment",
             "type": "string",
-            "example": "https://myalice.com/logo.png"
+            "example": "https://iomnihub.com/logo.png"
           }
         }
       },
@@ -542,7 +542,7 @@
           },
           "title": {
             "type": "string",
-            "example": "MyAlice WhatsApp Channel"
+            "example": "iOmniHub WhatsApp Channel"
           },
           "number": {
             "type": "string",
@@ -595,7 +595,7 @@
           },
           "footer": {
             "type": "string",
-            "example": "Powered by MyAlice"
+            "example": "Powered by iOmniHub"
           },
           "buttons": {
             "type": "array",
