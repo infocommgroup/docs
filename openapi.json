@@ -462,12 +462,12 @@
             "format": "binary"
           },
           "template_id": {
-            "description": "The Id of the Template, can be found in MyAlice Dashboard",
+            "description": "The Id of the Template, can be found in iOmniHub Dashboard",
             "type": "string",
             "example": "102323213"
           },
           "channel_id": {
-            "description": "The Id of the WhatsApp Channel, can be found in MyAlice Dashboard",
+            "description": "The Id of the WhatsApp Channel, can be found in iOmniHub Dashboard",
             "type": "string",
             "example": "1022"
           },
